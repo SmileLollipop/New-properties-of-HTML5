@@ -1,0 +1,2 @@
+Server-Sent Events实际上将Comet技术进行了标准化。Server-Sent Events规范“定义了API来打开一个HTTP连接，通过该连接能够获取从服务器推送的通知”。
+Server-Sent Events包含新的HTML元素EventSource和新的MIME类型 text/event-stream，这个MIME类型定义了事件框架格式。 
