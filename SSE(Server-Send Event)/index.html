@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SSE</title>
+</head>
+
+<body>
+	<div id="result">...</output>
+</body>
+<script>
+
+// var source;
+(function init(argument) {
+
+	source=new EventSource("http://localhost/SSE(Server-Send%20Event)/data.php")//创建EventSource对象，代表事件来源
+	source.onopen=function(){
+		document.getElementById('result').innerHTML='连接已建立';
+	}
+	source.onmessage=function(event){
+		console.log("kk");
+
+		document.getElementById('result').innerHTML=event.data;
+	}
+
+})();
+
+	
+</script>
+</html>
